@@ -1,0 +1,145 @@
+/*voici le lien internet pour la bibliothèque du code CSS https://developer.mozilla.org/en-US/docs/Web/CSS 
+et voir aussi dans mon dossier PPT*/
+
+body {
+	padding: 30px;
+}
+
+#content{
+	display: flex;
+	flex-direction: row;
+	border: 1px solid #DCDBD9;
+}
+
+.bloc-gauche{
+	width: 35%;
+	background-color: #45FBD3;
+}
+
+.bloc-droite{
+	
+	padding: 50px;
+
+}
+
+
+
+.perso{
+	color: white ;
+	border: 2px solid #434952;
+	background-color: #434952;
+	text-align: center;
+	font-family: 'Black Ops One', cursive;
+	font-size: 30px;
+}
+
+
+
+.texte-perso{
+	padding: 20px;
+}
+
+.texte-perso1{
+	padding: 20px;
+	text-align: justify;
+	margin-bottom: 200px;
+}
+
+.email{
+	word-wrap: break-word;
+}
+
+
+.loisir{
+	padding: 20px;
+	font-size: 40px;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+.photo-ronde{	
+	overflow: hidden;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-radius: 50%;
+	border: 2px solid #434952;
+	width: 150px;
+	height: 150px;
+	object-position: center;
+ }
+
+img{
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	object-fit: cover;
+	object-position: top center;
+
+}
+
+.lucie{
+	color: #45FBD3;
+	
+}
+
+.nom{
+	font-family: 'Monoton', cursive;
+	font-size: 60px;
+	margin-top: -20px;
+	margin-bottom: -20px;
+}
+
+.job{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 40px;
+	
+}
+
+.hr{
+	margin-top: -30px;
+}
+
+.hr1{
+	margin-top: -35px;
+}
+
+
+.bloc-formation1{
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.date-lieu{
+	margin-right: 80px;
+	width: 150px;
+	height: 100px;
+}
+
+.ecole{
+	width: 600px;
+	height: 150px;
+}
+
+.bloc-formation2{
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.bloc-formation3{
+	display: flex;
+	flex-direction: row;
+	
+}
+
+
+
+.exp{
+	font-family: 'Lobster', cursive;
+	font-size: 40px;
+	margin-top: 70px;
+}
+
