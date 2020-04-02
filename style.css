@@ -1,76 +1,47 @@
-/*voici le lien internet pour la bibliothèque du code CSS https://developer.mozilla.org/en-US/docs/Web/CSS 
-et voir aussi dans mon dossier PPT*/
+/*Lien internet pour la bibliothèque du code CSS https://developer.mozilla.org/en-US/docs/Web/CSS 
+et voir notes dans mon dossier PPT*/
 
-body {
-	padding: 30px;
+
+
+/*CSS global*/
+	body {
+		padding: 30px;
+		margin: auto;
+		
 }
+
 
 #content{
 	display: flex;
 	flex-direction: row;
 	border: 1px solid #DCDBD9;
+	width: 100%;
+
 }
 
+/*CSS bloc gauche*/
 .bloc-gauche{
 	width: 35%;
 	background-color: #45FBD3;
 }
 
-.bloc-droite{
-	
-	padding: 50px;
+/* CSS de la photo de profil*/
 
-}
-
-
-
-.perso{
-	color: white ;
-	border: 2px solid #434952;
-	background-color: #434952;
-	text-align: center;
-	font-family: 'Black Ops One', cursive;
-	font-size: 30px;
-}
-
-
-
-.texte-perso{
-	padding: 20px;
-}
-
-.texte-perso1{
-	padding: 20px;
-	text-align: justify;
-	margin-bottom: 200px;
-}
-
-.email{
-	word-wrap: break-word;
-}
-
-
-.loisir{
-	padding: 20px;
-	font-size: 40px;
-	display: flex;
-	justify-content: space-around;
-}
-
-
-
-.photo-ronde{	
+.photo-ronde{	/*encadrement en cercle de la photo*/
 	overflow: hidden;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	margin-left: auto;
+	margin-right: auto;
 	border-radius: 50%;
 	border: 2px solid #434952;
 	width: 150px;
 	height: 150px;
-	object-position: center;
+	text-align: center;
  }
 
-img{
+/*propriétés pour que la photo rentre dans l'encadrement en cercle*/
+img{ 
 	width: inherit;
 	height: inherit;
 	border-radius: inherit;
@@ -79,11 +50,61 @@ img{
 
 }
 
-.lucie{
-	color: #45FBD3;
+/* CSS des titres encadrés en gris et texte en blanc*/
+.perso{
+	color: white ;
+	border: 2px solid #434952;
+	background-color: #434952;
+	text-align: center;
+	font-family: 'Black Ops One', cursive;
+	font-size: 25px;
+}
+
+/* CSS du texte sous l'encadré "contact" pour les coordonnées*/
+.texte-perso{
+	padding: 20px;
+	word-wrap: break-word;
+}
+
+/* CSS du texte sous l'encadré "à propos de moi" pour descriptif de moi-même*/
+.texte-perso1{
+	padding: 20px;
+	text-align: justify;
 	
 }
 
+
+/* CSS pour que l'adresse mail se coupe lorsqu'on rétrécit l'écran, éviter le débordement en dehors de la colonne attitré*/
+.email{
+	word-wrap: break-word;
+}
+
+/*CSS de la partie "loisirs" pour créer la section qui contient les 3 icônes encerclés*/
+.icones{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px;
+	
+}
+
+/*CSS de la partie "loisirs" pour encercler les icônes*/
+.loisir{
+	font-size: 40px;
+	border-radius: 50%;
+	border: 2px solid #434952;
+	padding: 20px;
+	overflow: hidden;
+}
+
+
+
+/* CSS pour la partie principale MAIN de droite afin de mettre espacement 50px de chaque côté*/
+.bloc-droite{
+	padding: 50px;
+}
+
+/* CSS pour la mise en forme de mon nom en entier "Lucie Venard"*/
 .nom{
 	font-family: 'Monoton', cursive;
 	font-size: 60px;
@@ -91,55 +112,176 @@ img{
 	margin-bottom: -20px;
 }
 
+/* CSS pour changer la couleur uniquement de mon prénom "lucie"*/
+.lucie{
+	color: #45FBD3;
+	
+}
+
+/* CSS pour changer la police et la taille du titre du job dév web junior*/
 .job{
 	font-family: 'Gloria Hallelujah', cursive;
 	font-size: 40px;
 	
 }
 
-.hr{
-	margin-top: -30px;
-}
-
-.hr1{
-	margin-top: -35px;
-}
-
-
-.bloc-formation1{
-	display: flex;
-	flex-direction: row;
-	
-}
-
-.date-lieu{
-	margin-right: 80px;
-	width: 150px;
-	height: 100px;
-}
-
-.ecole{
-	width: 600px;
-	height: 150px;
-}
-
-.bloc-formation2{
-	display: flex;
-	flex-direction: row;
-	
-}
-
-.bloc-formation3{
-	display: flex;
-	flex-direction: row;
-	
-}
-
-
-
-.exp{
+/* CSS pour la police, la taille et l'emplacement des titres de la partie principale de droite formation, exp pro et reco */
+.titre-exp{
 	font-family: 'Lobster', cursive;
 	font-size: 40px;
 	margin-top: 70px;
 }
 
+/* CSS la 1ere ligne horizontale pour souligner partiellement le titre du job*/
+.hr1{
+	border: 0;
+    height: 4px;
+    background: #45FBD3;
+	margin-top: -35px;
+	width: 13%;
+	margin-left: 0;
+	text-align: left;
+	
+}
+
+
+/* CSS de toutes les autres lignes horizontales qui servent à séparer les parties formation/exp pro/reco, https://css-tricks.com/examples/hrs/ */
+.hr{
+	border: 0;
+    height: 4px;
+    background: #45FBD3;
+	margin-top: -30px;
+	width: auto;
+ 	
+}
+
+/* CSS mettre en forme la partie formation, dates et lieu à gauche + école, formation et descriptif à droite*/
+.encart-exp{
+	display: flex;
+	flex-direction: row;
+	flex-direction: space-between;
+
+	
+}
+
+/* CSS mettre en forme taille et couleur de l'icône des dates*/
+.point{
+	font-size: 20px;
+	color: #45FBD3;	
+}
+
+
+/* CSS pour ajuster l'emplacement à gauche de la partie dates + lieu */
+.date-lieu{
+	
+	width: 150px;
+	margin-right: 50px;
+	
+	
+}
+
+/* CSS pour ajuster l'emplacement à droite de la partie école */
+.ecole{
+	width: 600px;
+	
+	
+}
+
+/* CSS pour ajuster l'emplacement à droite de la partie école */
+.descriptif-exp{
+	width: 600px;
+	height: 200px;
+
+}
+
+/* CSS pour réduire la taille des titres H2 car choix pour référencement mais visuellement pas esthétique car trop grand par rapport au titre au dessus */
+h2{
+	font-size: 17px;
+}
+
+/* CSS pour mettre en forme deux blocs distincts pour la dernière partie: recommandations*/
+.encart-reco{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+/* CSS pour ajuster la mise en forme*/
+.reco{
+	width: auto;
+	height: 110px;
+}
+
+/* CSS appliqué aux petits écrans comme laptop en-dessous de 1024px, entre 768 (tablet) et 1024 CSS doit ressembler à ça puis en dessous de 768px donc 3 media queries minimum*/
+@media all and (max-width: 1024px) {
+   
+   #content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bloc-gauche{
+    	width: auto;
+    }
+
+    .texte-perso{
+    	text-align: center;
+    	font-size: 20px;
+    }
+
+    
+    .bloc-droite{
+    	width: auto;
+    }
+
+
+   .nom{
+   		font-size: 40px;
+   }
+
+   .job{
+   		font-size: 30px;
+   }
+
+   
+
+   .encart-exp{
+		display: flex;
+		flex-direction: column;
+	
+	}
+	.date-lieu{
+		font-size: 20px;
+		text-align: center;
+		width: auto;
+		padding: 10px;
+		height: 60px;
+		
+	}
+
+
+	.descriptif-exp{
+		width: auto;
+		padding: 20px;
+		margin-bottom: 70px;
+	}
+	
+	.titre-exp{
+		font-size: 30px;
+
+	}
+
+	.encart-reco{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.reco{
+		width: auto;
+		margin-right: 40px;
+	}
+
+	
+}
+ 
