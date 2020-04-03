@@ -4,18 +4,18 @@ et voir notes dans mon dossier PPT*/
 
 
 /*CSS global*/
-	body {
-		padding: 30px;
-		margin: auto;
-		
+	
+body{
+	margin: 0;
+	border: 4px solid red;
+	padding: 0;
 }
-
 
 #content{
 	display: flex;
 	flex-direction: row;
-	border: 1px solid #DCDBD9;
 	width: 100%;
+	
 
 }
 
@@ -23,7 +23,9 @@ et voir notes dans mon dossier PPT*/
 .bloc-gauche{
 	width: 35%;
 	background-color: #45FBD3;
+		
 }
+
 
 /* CSS de la photo de profil*/
 
@@ -50,6 +52,18 @@ img{
 
 }
 
+.nom-queries {
+	display: none;
+}
+
+.job-queries{
+	display: none;
+}
+
+.hr1-queries{
+	display: none;
+}
+
 /* CSS des titres encadrés en gris et texte en blanc*/
 .perso{
 	color: white ;
@@ -62,13 +76,13 @@ img{
 
 /* CSS du texte sous l'encadré "contact" pour les coordonnées*/
 .texte-perso{
-	padding: 20px;
+	padding: 40px;
 	word-wrap: break-word;
 }
 
 /* CSS du texte sous l'encadré "à propos de moi" pour descriptif de moi-même*/
 .texte-perso1{
-	padding: 20px;
+	padding: 40px;
 	text-align: justify;
 	
 }
@@ -84,7 +98,7 @@ img{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 20px;
+	padding: 40px;
 	
 }
 
@@ -94,7 +108,7 @@ img{
 	border-radius: 50%;
 	border: 2px solid #434952;
 	padding: 20px;
-	overflow: hidden;
+	
 }
 
 
@@ -102,6 +116,8 @@ img{
 /* CSS pour la partie principale MAIN de droite afin de mettre espacement 50px de chaque côté*/
 .bloc-droite{
 	padding: 50px;
+	
+
 }
 
 /* CSS pour la mise en forme de mon nom en entier "Lucie Venard"*/
@@ -213,35 +229,95 @@ h2{
 	height: 110px;
 }
 
-/* CSS appliqué aux petits écrans comme laptop en-dessous de 1024px, entre 768 (tablet) et 1024 CSS doit ressembler à ça puis en dessous de 768px donc 3 media queries minimum*/
-@media all and (max-width: 1024px) {
+/* CSS appliqué aux écrans laptop en-dessous de 1024px*/
+@media screen and  (max-width: 1024px) {
+   
    
    #content {
       display: flex;
       flex-direction: column;
+     
     }
 
     .bloc-gauche{
-    	width: auto;
+    	width: 100%;
+    	
     }
+
+    .photo-ronde{
+    	text-align: center;
+    }
+
+    .nom{
+    	display: none;
+    }
+
+    .nom-queries{
+		display: block;
+		font-family: 'Monoton', cursive;
+		font-size: 50px;
+		text-align: center;
+
+	}
+
+	.job{
+		display: none;
+	}
+
+	.job-queries{
+		display: block;	
+		font-family: 'Gloria Hallelujah', cursive;
+		font-size: 40px;
+		text-align: center;
+		margin-top: -60px;
+		margin-bottom: 60px;
+
+	}
+
+	.hr1{
+		display: none;
+	}
+
+	.hr1-queries{
+	border: 0;
+    height: 4px;
+    background: white;
+	margin-top: -75px;
+	width: 13%;
+	text-align: center;
+	margin-left: 170px;
+
+	}
+
+	.lucie-mobile{
+		color: white;
+
+	}
+
+	.perso{
+		
+	font-size: 35px;
+}
+
+
+	.texte-perso1{
+	font-size: 25px;
+	padding: 40px;
+		
+}
 
     .texte-perso{
     	text-align: center;
-    	font-size: 20px;
+    	font-size: 25px;
     }
 
+    .icones{
+    	justify-content: space-around;
+    }
     
-    .bloc-droite{
-    	width: auto;
-    }
 
-
-   .nom{
-   		font-size: 40px;
-   }
-
-   .job{
-   		font-size: 30px;
+   .hr{
+   	width: 100%;
    }
 
    
@@ -251,20 +327,37 @@ h2{
 		flex-direction: column;
 	
 	}
+
+	
+
 	.date-lieu{
-		font-size: 20px;
-		text-align: center;
 		width: auto;
+		font-size: 25px;
+		text-align: center;
 		padding: 10px;
-		height: 60px;
+		margin-top: 10px;
 		
+	}
+
+	.ecole{
+		font-size: 25px;
+		padding-bottom: 20px;
+		width: auto;
+		
+	}
+
+	h2{
+		font-size: 25px;
 	}
 
 
 	.descriptif-exp{
 		width: auto;
-		padding: 20px;
-		margin-bottom: 70px;
+		height: auto;
+		padding-bottom: 20px;
+		font-size: 25px;
+		
+		
 	}
 	
 	.titre-exp{
@@ -278,10 +371,305 @@ h2{
 	}
 
 	.reco{
-		width: auto;
-		margin-right: 40px;
+		width: 800px;
+		font-size: 20px;
+	}
+
+}
+ 
+ /* CSS appliqué aux écrans tablet en-dessous de 768px*/
+@media screen and  (max-width: 768px) {
+   
+   
+
+   #content {
+      display: flex;
+      flex-direction: column;
+       
+    }
+
+    .bloc-gauche{
+    	width: 100%;
+    	
+    }
+
+    .photo-ronde{
+    	text-align: center;
+    }
+
+    .nom{
+    	display: none;
+    }
+
+    .nom-queries{
+		display: block;
+		font-family: 'Monoton', cursive;
+		font-size: 50px;
+		text-align: center;
+
+	}
+
+	.job{
+		display: none;
+	}
+
+	.job-queries{
+		display: block;	
+		font-family: 'Gloria Hallelujah', cursive;
+		font-size: 40px;
+		text-align: center;
+		margin-top: -60px;
+		margin-bottom: 60px;
+
+	}
+
+	.hr1{
+		display: none;
+	}
+
+	.hr1-queries{
+	border: 0;
+    height: 4px;
+    background: white;
+	margin-top: -75px;
+	width: 17%;
+	text-align: center;
+	margin-left: 72px;
+
+	}
+
+	.lucie-mobile{
+		color: white;
+
+	}
+
+	.perso{
+		
+	font-size: 35px;
+}
+
+
+	.texte-perso1{
+	font-size: 20px;
+	padding: 40px;
+		
+}
+
+    .texte-perso{
+    	text-align: center;
+    	font-size: 20px;
+    }
+
+    .icones{
+    	justify-content: space-around;
+    }
+    
+
+   .hr{
+   	width: 100%;
+   }
+
+   
+
+   .encart-exp{
+		display: flex;
+		flex-direction: column;
+	
 	}
 
 	
+
+	.date-lieu{
+		width: auto;
+		font-size: 20px;
+		text-align: center;
+		padding: 10px;
+		margin-top: 10px;
+		
+		
+	}
+
+	.ecole{
+		font-size: 20px;
+		padding-bottom: 20px;
+		width: auto;
+		
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
+
+	.descriptif-exp{
+		width: auto;
+		height: auto;
+		padding-bottom: 20px;
+		font-size: 20px;
+		
+		
+	}
+	
+	
+
+	.encart-reco{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.reco{
+		width: 800px;
+		height: auto;
+		font-size: 20px;
+	}
+
 }
- 
+
+/* CSS appliqué aux écrans smartphone entre 425px et 320px*/
+@media screen and (min-width: 320px) and (max-width: 425px) {
+   
+   
+
+   #content {
+      display: flex;
+      flex-direction: column;
+      width: 470px; /*format adapté pour écran de 320px*/
+    }
+
+    .bloc-gauche{
+    	width: 100%;
+    	
+    }
+
+    .photo-ronde{
+    	text-align: center;
+    }
+
+    .nom{
+    	display: none;
+    }
+
+    .nom-queries{
+		display: block;
+		font-family: 'Monoton', cursive;
+		font-size: 45px;
+		text-align: center;
+
+	}
+
+	.job{
+		display: none;
+	}
+
+	.job-queries{
+		display: block;	
+		font-family: 'Gloria Hallelujah', cursive;
+		font-size: 30px;
+		text-align: center;
+		margin-top: -60px;
+		margin-bottom: 60px;
+
+	}
+
+	.hr1{
+		display: none;
+	}
+
+	.hr1-queries{
+	border: 0;
+    height: 4px;
+    background: white;
+	margin-top: -72px;
+	width: 17%;
+	text-align: center;
+	margin-left: 65px;
+
+	}
+
+	.lucie-mobile{
+		color: white;
+
+	}
+
+	.perso{
+		
+	font-size: 35px;
+}
+
+
+	.texte-perso1{
+	font-size: 25px;
+	padding: 40px;
+		
+}
+
+    .texte-perso{
+    	text-align: center;
+    	font-size: 25px;
+    }
+
+    .icones{
+    	justify-content: space-around;
+    }
+    
+
+   .hr{
+   	width: 100%;
+   }
+
+   
+
+   .encart-exp{
+		display: flex;
+		flex-direction: column;
+	
+	}
+
+	
+
+	.date-lieu{
+		width: auto;
+		font-size: 20px;
+		text-align: center;
+		padding: 10px;
+		margin-top: 10px;
+		
+		
+	}
+
+	.ecole{
+		font-size: 20px;
+		padding-bottom: 20px;
+		width: auto;
+		
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
+
+	.descriptif-exp{
+		width: auto;
+		height: auto;
+		padding-bottom: 20px;
+		font-size: 20px;
+		
+		
+	}
+	
+	
+
+	.encart-reco{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.reco{
+		width: 470px;
+		height: auto;
+		font-size: 15px;
+		padding-right: 30px;
+	}
+
+}

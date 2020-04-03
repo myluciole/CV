@@ -3,46 +3,59 @@
 <html lang="fr">
 	<!-- partie HEAD avec codage universel informatique utf-8, lien vers CSS, différentes polices de texte, icônes et le titre de l'onglet-->
    	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
-		<title>Lucie Venard | Curriculum vitae | Toulouse 31, Agen 47, Bordeaux 33</title> <!-- 70 caractères max-->
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Courgette|Gloria+Hallelujah|Lobster|Fredoka+One|Titan+One|Press+Start+2P|Monoton|&display=swap" rel="stylesheet"> 
-		<!-- lien récupérer sur le site https://fonts.google.com pour intégrer des polices d'écriture originales (plusieurs polices en 1 seul lien, chaque police séparée par "|" et se termine par &display=swap-->
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" /> <!--mettre yes = autorisation du zoom pour l'utilisateur donc meilleure ergonomie et accessibilité de la page-->
 		<script src="https://kit.fontawesome.com/e2e6b41211.js" crossorigin="anonymous"></script>  <!--lien pour intégrer icônes fontawesome-->
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Courgette|Gloria+Hallelujah|Lobster|Fredoka+One|Titan+One|Press+Start+2P|Monoton|&display=swap" rel="stylesheet"/> 
+		<!-- lien récupérer sur le site https://fonts.google.com pour intégrer des polices d'écriture originales (plusieurs polices en 1 seul lien, chaque police séparée par "|" et se termine par &display=swap-->
+		<title>Lucie Venard | Curriculum vitae | Toulouse 31, Agen 47, Bordeaux 33</title> <!-- 70 caractères max-->
 		
-   	</head>
+		
+	</head>
 
 	<body>
-		
 		<section id="content"> <!-- partie SECTION comme cadre principal de tout le CV-->
-
 			<header class="bloc-gauche"> <!--HEADER pour toute la partie gauche de mon CV avec photo de profil, coordonnées, à propos de moi et loisirs-->
 				
-   				<p class="photo-ronde"><img src="photo_portrait_cv.png" alt="photo identité CV"/></p> <!-- emplacement de ma PHOTO de profil-->
-				
-					<h3 class="perso">CONTACT</h1>
+   					<p class="photo-ronde"><img src="photo_portrait_cv.png" alt="photo identité CV"/></p> <!-- emplacement de ma PHOTO de profil-->
+   				
+				<h3 class="nom-queries"> <span class="lucie-mobile">Lucie</span> &nbsp;&nbsp;&nbsp;&nbsp;Venard </h3> <!--nom qui apparait seulement en version mobile avec media queries-->
+
+				<h1><span class="job-queries">Développeuse Web Junior</span></h1> <!--job qui apparait seulement avec media queries-->
+
+				<hr class="hr1-queries"><!--version media queries-->
+
+					<h3 class="perso">CONTACT</h3>
 						<div class="texte-perso"> <!-- partie DIV pour les coordonnées-->
 							<p>Adresse <br>Agen, 47000</p>
 							<p>Téléphone / Whatsapp <br> 09 86 25 46 30</p>
 							<p class="email">Email <br> fakemail@gmail.com</p>
 							<p>Site web <br>
-							https://github.com/myluciole/CV.git </p>
+							<a href="https://myluciole.github.io/CV" target="_blank">
+						https://myluciole.github.io/CV</a> </p>
 							<p>Skype <br> mySkype </p>
 						</div><!-- FIN de la partie DIV pour les coordonnées-->
 
-					<h3 class="perso">A PROPOS DE MOI</h1>
+					<h3 class="perso">A PROPOS DE MOI</h3>
 						<div class="texte-perso1"> <!-- partie DIV pour la partie à propos de moi-->
-							<p>Passionnée par la communication à 360° et le développement de business unit, je me documente régulièrement sur ces deux domaines afin de parfaire mes connaissances et être au courant des dernières actualités. </p> <p>Trilingue, polyvalente et autodidacte, j'ai également le sens de la créativité et du résultat afin d'atteindre au mieux les objectifs fixés.</p>
-							<p>Je propose mes services de développement web aux entreprises pour booster leur communication digitale :</p>
+							<p>Passionnée par la communication à 360°, je me documente régulièrement en faisant une veille technologique afin de parfaire mes connaissances et être au courant des dernières actualités. </p> <p>Trilingue, polyvalente et autodidacte, j'ai également le sens de la créativité et du résultat afin d'atteindre au mieux les objectifs fixés.</p>
+							<p>Suite à ma formation Openclassrooms, je recherche un poste en alternance ou en CDI dans une agence de communication (ou autre) afin de m'épanouir professionnellement. Je souhaiterai mettre à votre service mes compétences pour les missions suivantes :</p>
 							<ol>
-							<li>Conception de site internet </li>
-							<li>Infographisme (logo, bannières, créas)</li>
-							<li>Référencement naturel</li>
+							<li>Conception de site internet (HTML5 et CSS3, Wordpress) </li>
+							<li>Infographisme (logo, bannières, créas print & web)</li>
+							<li>Référencement naturel (SEO)</li>
+							<li>Création de contenus avec rigueur (souci de l'orthographe et de la grammaire)</li>
+							<li>Utilisation de Git et Github pour travailler en équipe</li>
+							<li>Création de vidéos (montage, texte, son, effets)</li>
+							<li>Animation de réseaux sociaux (Youtube, Instagram, Linkedin, Facebook, Twitter)</li>
 							</ol>
+							<p>Mon CV en ligne est un aperçu de mon savoir-faire dans le domaine du web concernant la maîtrise des langages HTML5 et CSS3.</p>
+							<p>Je suis disponible immédiatement et mobile géographiquement. </p>
+							<p>N'hésitez pas à me contacter pour en savoir plus sur mon profil, me faire part de vos attentes et échanger sur votre proposition d'emploi.</p>
 						</div>	<!-- FIN de la partie DIV pour la partie à propos de moi-->
 
-					<h3 class="perso">LOISIRS</h1> <!-- partie Loisirs avec les icônes-->
+					<h3 class="perso">LOISIRS</h3> <!-- partie Loisirs avec les icônes-->
 						<div class="icones">
 							<p class="loisir"><i class="fas fa-hamburger"></i></p>
 							<p class="loisir"><i class="fas fa-bicycle"></i></p>
@@ -54,13 +67,13 @@
 
 			<main class="bloc-droite"> <!-- DEBUT de la partie MAIN concernant la partie principale à droite du CV: formation/exp pro/reco-->
 
-				<h3 class="nom"> <span class="lucie">Lucie</span> &nbsp;&nbsp;&nbsp;&nbsp;Venard </h2> <!-- 1er élément de MAIN = mon nom complet-->
+				<h3 class="nom"> <span class="lucie">Lucie</span> &nbsp;&nbsp;&nbsp;&nbsp;Venard </h3> <!-- 1er élément de MAIN = mon nom complet-->
 				
 				<h1><span class="job">Développeuse Web Junior</span></h1> <!-- 2ème élément de MAIN = le titre de mon métier -->
 
 						<hr class="hr1"><!-- HR = ligne horizontale pour souligner partiellement le titre de mon métier "dév web junior" avec propriétés CSS pour la mise en forme-->
 
-				<h3 class="titre-exp"><i class="fas fa-graduation-cap"></i> &nbsp;  Formation</h2> <!--1er titre qui annonce la partie FORMATION-->
+				<h3 class="titre-exp"><i class="fas fa-graduation-cap"></i> &nbsp;  Formation</h3> <!--1er titre qui annonce la partie FORMATION-->
 
 						<hr class="hr"> <!-- HR = ligne horizontale pour distinguer la partie formation-->
 
@@ -103,7 +116,7 @@
 							</div><!-- Fin #3 bloc de droite avec école, formation et descriptif -->
 						</section> <!-- FIN #3 section encart-formation-->
 
-							<h3 class="titre-exp"><i class="fas fa-briefcase"></i> &nbsp;  Expérience Professionnelle</h2> <!--2ème titre qui annonce la partie Exp Pro-->
+							<h3 class="titre-exp"><i class="fas fa-briefcase"></i> &nbsp;  Expérience Professionnelle</h3> <!--2ème titre qui annonce la partie Exp Pro-->
 
 								<hr class="hr"><!--HR = ligne horizontale pour distinguer la partie exp pro-->
 
