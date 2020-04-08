@@ -1,28 +1,19 @@
-/*Lien internet pour la bibliothèque du code CSS https://developer.mozilla.org/en-US/docs/Web/CSS 
-et voir notes dans mon dossier PPT*/
-
-
-
 /*CSS global*/
 	
 body{
 	margin: 0;
-	
 }
 
 #content{
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	
-
 }
 
 /*CSS bloc gauche*/
 .bloc-gauche{
 	width: 35%;
-	background-color: #45FBD3;
-		
+	background-color: #45FBD3;	
 }
 
 
@@ -98,16 +89,14 @@ img{
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 40px;
-	
 }
 
 /*CSS de la partie "loisirs" pour encercler les icônes*/
 .loisir{
-	font-size: 40px;
+	font-size: 20px;
 	border-radius: 50%;
 	border: 2px solid #434952;
-	padding: 20px;
-	
+	padding: 20px;	
 }
 
 
@@ -278,13 +267,14 @@ h2{
 	}
 
 	.hr1-queries{
+	display: block;
 	border: 0;
     height: 4px;
     background: white;
 	margin-top: -75px;
-	width: 13%;
+	width: 10%;
 	text-align: center;
-	margin-left: 170px;
+	margin-left: 284px;
 
 	}
 
@@ -427,14 +417,14 @@ h2{
 	}
 
 	.hr1-queries{
-	border: 0;
-    height: 4px;
-    background: white;
-	margin-top: -75px;
-	width: 17%;
-	text-align: center;
-	margin-left: 72px;
-
+		display: block;
+		border: 0;
+	    height: 4px;
+	    background: white;
+		margin-top: -75px;
+		width: 13%;
+		text-align: center;
+		margin-left: 158px;
 	}
 
 	.lucie-mobile{
@@ -444,15 +434,14 @@ h2{
 
 	.perso{
 		
-	font-size: 35px;
-}
+		font-size: 35px;
+	}
 
 
 	.texte-perso1{
 	font-size: 20px;
 	padding: 40px;
-		
-}
+	}
 
     .texte-perso{
     	text-align: center;
@@ -473,7 +462,6 @@ h2{
    .encart-exp{
 		display: flex;
 		flex-direction: column;
-	
 	}
 
 	
@@ -484,15 +472,12 @@ h2{
 		text-align: center;
 		padding: 10px;
 		margin-top: 10px;
-		
-		
 	}
 
 	.ecole{
 		font-size: 20px;
 		padding-bottom: 20px;
 		width: auto;
-		
 	}
 
 	h2{
@@ -505,8 +490,6 @@ h2{
 		height: auto;
 		padding-bottom: 20px;
 		font-size: 20px;
-		
-		
 	}
 	
 	
@@ -575,14 +558,14 @@ h2{
 	}
 
 	.hr1-queries{
-	border: 0;
-    height: 4px;
-    background: white;
-	margin-top: -72px;
-	width: 17%;
-	text-align: center;
-	margin-left: 65px;
-
+		display: block;
+		border: 0;
+	    height: 4px;
+	    background: white;
+		margin-top: -72px;
+		width: 16%;
+		text-align: center;
+		margin-left: 65px;
 	}
 
 	.lucie-mobile{
