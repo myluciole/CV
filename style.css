@@ -57,7 +57,7 @@ img{
 /* CSS des titres encadrés en gris et texte en blanc*/
 .perso{
 	color: white ;
-	border: 2px solid #434952;
+	padding: 2px;
 	background-color: #434952;
 	text-align: center;
 	font-family: 'Black Ops One', cursive;
@@ -163,7 +163,7 @@ img{
 .encart-exp{
 	display: flex;
 	flex-direction: row;
-	flex-direction: space-between;
+	justify-content: space-between;
 
 	
 }
